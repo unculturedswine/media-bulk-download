@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name: Media Bulk Download
- * Plugin URI: https://sqrdmedia.com
- * Description: Download original images from WordPress uploads folder by year and month. Find the Tool in the Media menu.
+ * Plugin URI: https://plugins.joeljenkins.me
+ * Description: Bulk download original images from your WordPress uploads folder organized by year and month. Select any time period and download a ZIP of your media files. Perfect for creating backups, migrating content, or archiving media without messy database exports.
  * Version: 1.0.0
- * Author: Joel Jenkins
- * Author URI: https://joeljenkins.me
+ * Author: Kinda Useful Plugins
+ * Author URI: https://plugins.joeljenkins.me
  * License: GPL v2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: media-bulk-download
@@ -27,6 +27,14 @@ define('MBD_PLUGIN_BASENAME', plugin_basename(__FILE__));
 require_once MBD_PLUGIN_PATH . 'includes/class-media-bulk-download.php';
 require_once MBD_PLUGIN_PATH . 'includes/class-admin-page.php';
 require_once MBD_PLUGIN_PATH . 'includes/class-download-handler.php';
+
+// Auto-updates from Kinda Useful Plugins
+require_once MBD_PLUGIN_PATH . 'includes/class-plugin-updater.php';
+new Kinda_Useful_Plugin_Updater(
+    'https://plugins.joeljenkins.me',
+    __FILE__,
+    'media-bulk-download'
+);
 
 // Initialize the plugin
 function mbd_init() {
