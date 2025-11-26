@@ -1,0 +1,155 @@
+/* Media Bulk Download Admin Styles */
+.mbd-container {
+    max-width: 800px;
+    margin: 20px 0;
+}
+
+.mbd-description {
+    background: #f9f9f9;
+    border-left: 4px solid #0073aa;
+    padding: 15px;
+    margin-bottom: 25px;
+}
+
+.mbd-description p {
+    margin: 0;
+    font-size: 14px;
+}
+
+#mbd-download-form .form-table {
+    margin-bottom: 20px;
+}
+
+#mbd-download-form .form-table th {
+    width: 150px;
+}
+
+#mbd-download-form select {
+    min-width: 200px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+#mbd-download-form select:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+#mbd-download-btn {
+    position: relative;
+}
+
+#mbd-download-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.spinner {
+    float: none;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+#mbd-message {
+    margin: 20px 0;
+    padding: 12px;
+}
+
+#mbd-message p {
+    margin: 0;
+}
+
+.mbd-info {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.mbd-info h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.mbd-info ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.mbd-info li {
+    margin-bottom: 8px;
+    color: #666;
+}
+
+/* Loading states */
+.mbd-loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.mbd-progress {
+    background: #f0f0f0;
+    border-radius: 3px;
+    height: 20px;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.mbd-progress-bar {
+    background: #0073aa;
+    height: 100%;
+    transition: width 0.3s ease;
+}
+
+/* Responsive styles */
+@media (max-width: 782px) {
+    .mbd-container {
+        margin: 10px 0;
+    }
+    
+    #mbd-download-form .form-table th,
+    #mbd-download-form .form-table td {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+    }
+    
+    #mbd-download-form .form-table th {
+        border-bottom: none;
+        padding-bottom: 5px;
+    }
+    
+    #mbd-download-form select {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+/* Status icons */
+.mbd-status-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.mbd-status-success::before {
+    content: "\f147";
+    font-family: dashicons;
+    color: #46b450;
+}
+
+.mbd-status-error::before {
+    content: "\f335";
+    font-family: dashicons;
+    color: #dc3232;
+}
+
+.mbd-status-info::before {
+    content: "\f348";
+    font-family: dashicons;
+    color: #0073aa;
+}
