@@ -6,10 +6,11 @@
  * Version: 1.0.0
  * Author: Kinda Useful Plugins
  * Author URI: https://plugins.joeljenkins.me
+ * Requires at least: 5.0
+ * Requires PHP: 7.0
  * License: GPL v2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: media-bulk-download
- * Domain Path: /languages
  */
 
 // Prevent direct file access
