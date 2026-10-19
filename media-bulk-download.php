@@ -3,7 +3,7 @@
  * Plugin Name: Media Bulk Download
  * Plugin URI: https://plugins.joeljenkins.me
  * Description: Bulk download original images from your WordPress uploads folder organized by year and month. Select any time period and download a ZIP of your media files. Perfect for creating backups, migrating content, or archiving media without messy database exports.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Kinda Useful Plugins
  * Author URI: https://plugins.joeljenkins.me
  * Requires at least: 5.0
@@ -19,7 +19,7 @@ if (!defined('ABSPATH')) {
 }
 
 // Define plugin constants
-define('MBD_PLUGIN_VERSION', '1.0.0');
+define('MBD_PLUGIN_VERSION', '1.0.1');
 define('MBD_PLUGIN_URL', plugin_dir_url(__FILE__));
 define('MBD_PLUGIN_PATH', plugin_dir_path(__FILE__));
 define('MBD_PLUGIN_BASENAME', plugin_basename(__FILE__));

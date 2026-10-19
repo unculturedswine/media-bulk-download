@@ -8,8 +8,8 @@ Bulk download original images from your WordPress uploads folder organized by ye
 Contributors: Kinda Useful Plugins
 Tags: media, download, backup, images, bulk
 Requires at least: 5.0
-Tested up to: 6.4
-Stable tag: 1.0.0
+Tested up to: 6.7
+Stable tag: 1.0.1
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -51,6 +51,10 @@ Temporary ZIP files are created in wp-content/uploads/mbd-temp/ and cleaned up a
 The plugin handles large downloads, but your server's PHP memory and execution time limits may affect very large months.
 
 == Changelog ==
+
+= 1.0.1 =
+* Updated WordPress tested version to 6.7
+* Auto-update support
 
 = 1.0.0 =
 * Initial release
